@@ -1,0 +1,132 @@
+
+.cart {
+  max-width: auto;
+  margin: 20px auto;
+  padding: 16px;
+  background: rgb(203, 205, 200);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  color: #222;
+}
+
+.cart-list{
+    display: flex;
+    justify-content: center;
+}
+
+.cart.empty {
+  text-align: center;
+  padding: 48px 12px;
+  font-size: 1.05rem;
+  color: #666;
+}
+
+
+.cart-card {
+  background-color: grey;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  box-sizing: border-box;
+}
+
+
+.cart-card-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.cart-card-img img {
+  width: 100%;
+  height: auto;
+  max-height: 160px;
+  object-fit: contain;
+  display: block;
+  border-radius: 6px;
+}
+
+.cart-card-info {
+  width: 100%;
+  margin-top: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.cart-card-info h4 { margin: 0 0 6px 0; font-size: 1.05rem; font-weight: 600; }
+.cart-card-info p { margin: 4px 0; color: #222; font-size: 0.95rem; }
+
+
+.cart-card-info button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-actions button {
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.btn-remove {
+  background: #ff6b6b;
+  color: #fff;
+  border: none;
+}
+
+.cart-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.cart-total { 
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: black;
+ }
+
+ .footer-btns{
+    display: flex;
+    gap: 12px;
+ }
+
+ .btn-clear{
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #ff6b6b;
+}
+
+.btn-comprar{
+    padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #20bf07;
+}
+
+@media (max-width: 640px) {
+  .cart-list{ flex-direction: column; }
+}

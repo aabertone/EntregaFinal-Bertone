@@ -4,7 +4,7 @@ import './ItemList.css'
 
 const ItemList = ({productos}) => {
   if (!productos || productos.length === 0) {
-    return <div>Cargando</div>
+    return <div className="cargando">Cargando</div>
   }
   return (
     <div className="producard">

@@ -4,6 +4,7 @@ import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer.jsx'
 import ItemFilterContainer from './Components/ItemFilterContainer/ItemFilterContainer.jsx'
+import CarritoContainer from './Components/CarritoContainer/CarritoContainer.jsx'
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<ItemListContainer/>}></Route>
         <Route path="/cat/:cat" element={<ItemFilterContainer/>}></Route>
-        <Route path="/carrito" element={<p>Proximamente</p>}></Route>
+        <Route path="/carrito" element={<CarritoContainer/>}></Route>
         <Route path="/detalle/:id" element={<ItemDetailContainer/>}></Route>
       </Routes>
     </>

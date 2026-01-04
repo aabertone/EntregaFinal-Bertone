@@ -7,6 +7,9 @@ header{
     border-radius: 10px;
     padding-inline: 10px;
 }
+header a{
+    text-decoration: none;
+}
 li{
     display: inline-block;
     margin: 10px;

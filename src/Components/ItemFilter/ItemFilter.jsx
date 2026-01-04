@@ -4,7 +4,7 @@ import './ItemFilter.css'
 
 const ItemFilter = ({ productosFiltrados }) => {
   if (!productosFiltrados || productosFiltrados.length === 0) {
-    return <div>Cargando</div>
+    return <div className="cargando">Cargando</div>
   }
 
   return (
