@@ -1,11 +1,22 @@
 import React from 'react'
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { carrito } from '../../Providers/CartContext'
 import '../Carrito/Carrito.css'
 import '../Articulos/Articulos.css'
 
 const Carrito = () => {
     const { items, addItem, removeOne, removeItem, clearCart, getTotalPrice, cantidad } = useContext(carrito)
+    const [compraOk, setCompraOk] = useState(false)
+    
+    if (compraOk) {
+      return (
+        <div className="cart empty">
+          <h3>¡Gracias por su compra!</h3>
+          <p>Procesando pedido...</p>
+        </div>
+      )
+    }
+
 
     if (!items.length) return (
       <div className="cart empty">
@@ -14,10 +25,14 @@ const Carrito = () => {
     )
 
     const comprar = () => {
-        clearCart()
-        alert("Gracias por su compra!")
-        return
-    }
+      clearCart()
+      setCompraOk(true)
+
+      setTimeout(() => {
+      setCompraOk(false)
+  }, 3000)
+}
+
 
     return (
       <div className="cart">

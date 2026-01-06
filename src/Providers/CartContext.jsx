@@ -28,7 +28,7 @@ const CartContext = ({children}) => {
         setItems(prev => prev.flatMap(i => {
             if (i.id !== id) return i
             if (i.quantity > 1) return {...i, quantity: i.quantity - 1}
-            return [] // si era 1, lo elimina
+            return []
         }))
     }
 

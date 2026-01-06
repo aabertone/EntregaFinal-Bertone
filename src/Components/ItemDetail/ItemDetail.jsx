@@ -3,6 +3,7 @@ import './ItemDetail.css'
 import { carrito } from "../../Providers/CartContext"
 import { useContext } from "react"
 import { useState } from 'react'
+import ItemCount from '../ItemCount/ItemCount'
 
 const ItemDetail = ({id, nombre, precio, img, desc}) => {
 
@@ -31,11 +32,7 @@ const ItemDetail = ({id, nombre, precio, img, desc}) => {
         <p>Precio: USD {precio}</p>
         <p>Id: {id}</p>
         <p>Descricpión: {desc}</p>
-        <p>Cantidad:{count}</p>
-        <div className="botones">
-        <button onClick={incrementar}>+</button>
-        <button onClick={decrementar}>-</button>
-        </div>
+        <ItemCount count={count} incrementar={incrementar} decrementar={decrementar} />
         <button onClick={agregarAlCarrito}>Agregar al carrito</button>
     </div>
   )
