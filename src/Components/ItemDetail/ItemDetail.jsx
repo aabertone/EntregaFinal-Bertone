@@ -1,4 +1,3 @@
-import React from 'react'
 import './ItemDetail.css'
 import { carrito } from "../../Providers/CartContext"
 import { useContext } from "react"
@@ -30,7 +29,6 @@ const ItemDetail = ({id, nombre, precio, img, desc}) => {
         <h2>Nombre: {nombre}</h2>
         <img src={img} alt={nombre} />
         <p>Precio: USD {precio}</p>
-        <p>Id: {id}</p>
         <p>Descricpión: {desc}</p>
         <ItemCount count={count} incrementar={incrementar} decrementar={decrementar} />
         <button onClick={agregarAlCarrito}>Agregar al carrito</button>

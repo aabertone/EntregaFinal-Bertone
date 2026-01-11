@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { getUnProducto } from '../../Productos'
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
@@ -9,12 +9,13 @@ const ItemDetailContainer = () => {
 
     useEffect(() => {
         getUnProducto(id)
-        .then(respuesta => setProducto(respuesta))
-    },[]);
+            .then(setProducto)
+            .catch((error) => console.log(error));
+    }, [id]);
 
   return (
     <div>
-        <ItemDetail {...producto}/>
+        {producto && <ItemDetail {...producto} />}
     </div>
   )
 }

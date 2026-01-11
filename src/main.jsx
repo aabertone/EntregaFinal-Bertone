@@ -6,12 +6,13 @@ import { BrowserRouter } from 'react-router-dom'
 import CartContext from './Providers/CartContext.jsx'
 
 createRoot(document.getElementById('root')).render(
-  
-  <BrowserRouter>
-    <CartContext>
-      <App />
-    </CartContext>
-  </BrowserRouter>
+  <StrictMode>
+    <BrowserRouter>
+      <CartContext>
+        <App />
+      </CartContext>
+    </BrowserRouter>
+  </StrictMode>
     
   
 )

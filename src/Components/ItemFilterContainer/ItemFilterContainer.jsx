@@ -1,4 +1,3 @@
-import React from 'react'
 import ItemFilter from '../ItemFilter/ItemFilter';
 import { getProductosFiltrados } from '../../Productos';
 import { useParams } from 'react-router-dom';

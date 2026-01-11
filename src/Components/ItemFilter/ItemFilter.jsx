@@ -1,4 +1,3 @@
-import React from 'react'
 import Articulos from '../Articulos/Articulos'
 import './ItemFilter.css'
 

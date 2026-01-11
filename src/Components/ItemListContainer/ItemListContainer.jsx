@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import ItemList from '../ItemList/ItemList'
 import { getProductos } from '../../Productos'
 

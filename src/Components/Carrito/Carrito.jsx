@@ -1,4 +1,3 @@
-import React from 'react'
 import { useContext, useState } from 'react'
 import { carrito } from '../../Providers/CartContext'
 import '../Carrito/Carrito.css'
