@@ -105,4 +105,4 @@ Para correr el proyecto correr el siguiente comando
 
 ## Link a la pagina
 
-[Deploy Vercel]()
+[Deploy Vercel](https://entrega-final-bertone.vercel.app/)
